@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Recipe Notebook</h1>
+    <p class="lead"> Save User Recipe and use it whenever you want</p>
+  
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2><a href="@Url.Action("Search","Recipe",new {searchType= Recipe.Definitions.ApplicationConstants.RecipeSearchTypes.Search_GlobalRecipes})">Search</a></h2>
+        <p>
+            Search Recipe which you like depend on your materials or what you wanna cook
+        </p>      
+    </div>
+    <div class="col-md-4">
+        <h2>Manage Your Recipe</h2>
+        <p>you can Create or Edit Your Recipes Here</p>
+        <p><a class="btn btn-default" >Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
